@@ -1,7 +1,8 @@
 package com.emc;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
+
+import java.util.List;
 
 public class Policy {
 	private final long id;
@@ -26,5 +27,4 @@ public class Policy {
 		return dataset;
 	}
 	
-
 }
