@@ -1,4 +1,4 @@
-package com.emc.memoryleaks.application;
+package com.emc.memoryleaks;
 
 
 
