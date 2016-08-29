@@ -1,0 +1,13 @@
+
+#Idea
+.idea
+
+#Git
+.git
+
+.gradle
+
+# Don't deliver lib dir jars
+/server/lib
+
+/server/build

@@ -1,23 +1,30 @@
 package com.emc.memoryleaks.beans;
 
 import org.springframework.data.annotation.Id;
-import org.springframework.data.annotation.Version;
-import org.springframework.data.mongodb.core.index.Indexed;
-import org.springframework.data.mongodb.core.mapping.Document;
 
-import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
-@Document
-public class User {
+public class Policy {
+	private final long id;
+	private final String content;
+	private final String dataset;
 
-    @Id
-    private String id;
-
-    @Version
-    private Long version;
-
-    /** policy names need to be unique */
-    @Indexed(unique = true)
-    private String policyName;
+	public Policy(long id, String content, String dataset) {
+		this.id = id;
+		this.content = content;
+		this.dataset = dataset;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	public String getContent () {
+		return content;
+	}
+	
+	public String getDataset() {
+		return dataset;
+	}
+	
 }
