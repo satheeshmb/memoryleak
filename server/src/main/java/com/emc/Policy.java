@@ -26,5 +26,4 @@ public class Policy {
 	public String getDataset() {
 		return dataset;
 	}
-	
 }
