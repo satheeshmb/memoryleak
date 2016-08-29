@@ -5,11 +5,26 @@ import org.springframework.data.annotation.Id;
 import java.util.List;
 
 public class Policy {
+	private final long id;
+	private final String content;
+	private final String dataset;
 
-    @Id
-    private String id;
-
-    private String policyName;
-
-    private List<Client> clients;
+	public Policy(long id, String content, String dataset) {
+		this.id = id;
+		this.content = content;
+		this.dataset = dataset;
+	}
+	
+	public long getId() {
+		return id;
+	}
+	
+	public String getContent () {
+		return content;
+	}
+	
+	public String getDataset() {
+		return dataset;
+	}
+	
 }
