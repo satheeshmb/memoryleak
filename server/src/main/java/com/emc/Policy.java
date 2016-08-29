@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 
 @Document
-public class User {
+public class Policy {
 
     @Id
     private String id;
