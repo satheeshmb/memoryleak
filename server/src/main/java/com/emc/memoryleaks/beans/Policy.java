@@ -1,4 +1,4 @@
-package com.emc;
+package com.emc.memoryleaks.beans;
 
 import org.springframework.data.annotation.Id;
 

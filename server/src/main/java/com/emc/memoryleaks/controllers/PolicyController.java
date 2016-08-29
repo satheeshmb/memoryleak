@@ -1,4 +1,4 @@
-package com.emc;
+package com.emc.memoryleaks.controllers;
 
 import java.util.concurrent.atomic.AtomicLong;
 
